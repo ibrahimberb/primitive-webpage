@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>Antalya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    li {
+        font: 1.2rem "Lato", sans-serif;
+        /* text-decoration: underline #576d5a 3px; */
+        margin-bottom: 1.5rem;
+        margin-top: 2em;
+    }
+
+    span {
+        display: inline-block;
+        border-bottom: 3px solid #576d5a;
+        padding-bottom: 2px;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Sea  */
+    .bgimg-1 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0.0)), url('pics/antalya/01.jpg');
+        min-height: 100%;
+    }
+
+    /* palm tree */
+    .bgimg-2 {
+        /* background-position-y: 8em; */
+        background-image: url('pics/antalya/02.jpg');
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    h1 {
+        color: #e2d2a7;
+        text-shadow: 3px 3px 2px rgb(49, 49, 61);
+        text-decoration: underline #e2d2a7;
+        /* rgb(49, 49, 61) */
+    }
+
+    h2 {
+        color: rgba(255, 255, 255);
+        text-shadow: 3px 3px 2px rgb(0, 0, 0);
+        text-decoration: underline #af784a;
+        outline-width: 4px;
+        outline-color: rgb(33, 31, 37);
+        outline-style: solid;
+        background-color: rgba(0, 0, 0, 0.2);
+        /* rgb(49, 49, 61) */
+    }
+
+    ::selection {
+        background-color: rgba(213, 202, 196, 0.4);
+        /* background-color: #fef7f1; */
+        color: black;
+    }
+
+    .footer {
+        background-image: url('pics/general/pattern.jpg');
+        min-height: 10em;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+
+    @media only screen and (max-device-width: 1600px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle" style="white-space:wrap;">
+            <h1 class="w3-center w3-padding-large w3-xxxlarge w3-wide w3-animate-opacity">
+                Welcome to Antalya!</h1>
+        </div>
+    </div>
+
+    <!-- About Antalya -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ANTALYA</h3>
+        <p class="w3-center"><em>Sun, sand, sea and more...</em></p>
+        <p>Welcome to Antalya, the paradise on earth, the pearl city of
+            the Mediterranean, and the Turkish Riviera. Antalya is Turkey's
+            9th largest city that stands for professionalism, experience,
+            diversity and quality. With its history, natural beauty and a
+            rich variety of local life style, the city hosts more than 11
+            million foreign guests, from all over the world on a yearly
+            basis. As the fourth most visited city in the world, Antalya
+            is one of the world's foremost tourism destinations, offers
+            you a peerless experience.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <img src="pics/antalya/03.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+                <p><b><i></i>Aspendos</b></p>
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <p>The region around Antalya offers sights of astonishing natural beauty
+                    as well as awesome historical remains. You can walk behind the cascade,
+                    a thrilling experience, at the Upper Düden Waterfalls, 14 km northeast
+                    of Antalya. On the way to Lara Beach, the Lower Düden Waterfalls plunge
+                    straight into the sea. The nearby rest area offers an excellent view of
+                    the falls; the view is even more spectacular from the sea. Kursunlu Waterfalls
+                    and Nilüfer Lake, both 18 km from Antalya are two more places of superb
+                    natural beauty.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:wrap;">
+            <h2 class="w3-center w3-padding-large w3-xxxlarge w3-wide w3-animate-opacity">
+                Where to Visit?</h2>
+        </div>
+    </div>
+
+    <!-- List of the places you can visit in Antalya -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">PLACES TO VISIT</h3>
+        <p class="w3-center"><em>Based on traveler visits and local insights</em></p>
+        <p>There are many beautiful places in Antalya. Here are some suggestions, you can click on them for more detail
+            information.</p>
+
+
+        <ol class="ol-1">
+            <li><span>Duden Selalesi</span></li>
+            <a href="http://www.google.com/search?q=Duden+Selalesi" target="_blank"><img src="pics/antalya/places/p1.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Duden Selalesi"></a>
+            <!-- <img src="pics/antalya/places/p1.jpg" class="w3-round w3-image margin-bottom" alt="Duden Selalesi" width="500"
+                height="333"> -->
+
+
+            <li><span>Hadrian's Gate</span></li>
+            <a href="http://www.google.com/search?q=Hadrian's+Gate" target="_blank"><img src="pics/antalya/places/p2.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Hadrian's Gate"></a>
+            <!-- <img src="pics/antalya/places/p2.jpg" class="w3-round w3-image" alt="Duden Selalesi" width="500" height="333"> -->
+
+
+            <li><span>Konyaalti Beach</span></li>
+            <a href="http://www.google.com/search?q=Konyaalti+Beach" target="_blank"><img src="pics/antalya/places/p3.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Konyaalti Beach"></a>
+            <!-- <img src="pics/antalya/places/p3.jpg" class="w3-round w3-image" alt="Duden Selalesi" width="500" height="333"> -->
+
+
+
+            <li><span>Antalya Museum</span></li>
+            <a href="http://www.google.com/search?q=Antalya+Museum" target="_blank"><img src="pics/antalya/places/p4.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Antalya Museum"></a>
+            <!-- <img src="pics/antalya/places/p4.jpg" class="w3-round w3-image" alt="Duden Selalesi" width="500" height="333"> -->
+
+
+            <li><span>Yivliminare Mosque</span></li>
+            <a href="http://www.google.com/search?q=Yivli+Minare+Mosque" target="_blank"><img src="pics/antalya/places/p5.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Yivliminare Mosque"></a>
+            <!-- <img src="pics/antalya/places/p5.jpg" class="w3-round w3-image" alt="Duden Selalesi" width="500" height="333"> -->
+
+
+
+            <li><span>Kursunlu Selalesi</span></li>
+            <a href="http://www.google.com/search?q=Kursunlu+Selalesi" target="_blank"><img src="pics/antalya/places/p6.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Kursunlu Selalesi"></a>
+            <!-- <img src="pics/antalya/places/p6.jpg" class="w3-round w3-image" alt="Duden Selalesi" width="500" height="333"> -->
+
+
+            <li><span>Antalya Aquarium</span></li>
+            <a href="http://www.google.com/search?q=Antalya+Aquarium" target="_blank"><img src="pics/antalya/places/p7.jpg"
+                    class="w3-round w3-image margin-bottom" width="500" height="333" alt="Antalya Aquarium"></a>
+            <!-- <img src="pics/antalya/places/p7.jpg" class="w3-round w3-image" alt="Duden Selalesi" width="500" height="333"> -->
+
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-normal w3-text-white w3-wide">Ibrahim Berber</span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
