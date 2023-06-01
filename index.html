@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    /* .font-2 {
+        font-family: 'Bree Serif', serif;
+    } */
+
+    .font-report {
+        font-family: 'Merriweather', serif;
+        color: rgb(38, 36, 51);
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image  */
+    .bgimg-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0)), url('pics/index/01.jpg');
+        min-height: 50%;
+    }
+
+    /* Second image*/
+    .bgimg-2 {
+        /* background-position-y: -8em; */
+        background-image: url('pics/index/02.jpg');
+        min-height: 60%;
+    }
+
+    /* Third image*/
+    .bgimg-3 {
+        background-image: url('pics/index/t6.jpg');
+        min-height: 30%;
+    }
+
+    .footer {
+        background-image: url('pics/general/pattern.jpg');
+        min-height: 10em;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .padding-top {
+        padding-top: 1.22em;
+    }
+
+    h1 {
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 1px #b5b5b2;
+        text-decoration: underline rgb(0, 0, 0);
+    }
+
+    ::selection {
+        background-color: rgba(213, 202, 196, 0.4);
+        /* background-color: #fef7f1; */
+        color: black;
+    }
+
+    table {
+        background: rgba(181, 181, 178, 0.4);
+        border-radius: 0.25em;
+        border-collapse: collapse;
+
+        /* margin: 1em; */
+        margin: 0 auto;
+        /* text-align:center; */
+    }
+
+    th {
+        border-bottom: 1px solid #364043;
+        color: #E2B842;
+        background: rgba(0, 0, 0, 0.35);
+        font-size: 1em;
+        font-weight: 600;
+        padding: 0.5em 1em;
+        text-align: left;
+    }
+
+    td {
+        color: #000;
+        font-weight: 400;
+        padding: 0.65em 1em;
+    }
+
+    .disabled td {
+        color: #4F5F64;
+    }
+
+    tbody tr {
+        transition: background 0.25s ease;
+    }
+
+    tbody tr:hover {
+        background: rgba(94, 94, 94, 0.4);
+    }
+
+    span-2 {
+        display: inline-block;
+        border-bottom: 3px solid #576d5a;
+        padding-bottom: 2px;
+        color: rgb(49, 49, 49);
+    }
+
+    span-1 {
+        display: inline-block;
+        border-bottom: 3px solid #576d5a;
+        padding-bottom: 2px;
+    }
+
+    /* **********  */
+
+    .display-container {
+        position: relative
+    }
+
+    .opacity-min {
+        opacity: 0.75
+    }
+
+    .padding-64 {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important
+    }
+
+    /* instagram icon */
+    .social-media-icon-1 {
+        vertical-align: middle;
+        margin: 25px;
+        width: 25px;
+    }
+
+    /* e mail (white one) */
+    .social-media-icon-2 {
+        vertical-align: middle;
+        margin: 25px;
+        width: 30px;
+    }
+
+
+    /* e mail (black one) */
+    .social-media-icon-3 {
+        vertical-align: middle;
+        margin: 25px;
+        width: 30px;
+    }
+
+
+
+    /* Turn off parallax scrolling for tablets and phones */
+
+    @media only screen and (max-device-width: 1600px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Title 'WELCOME TO MY PAGE' -->
+    <div class="bgimg-1 display-container opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:wrap;">
+            <h1 class="w3-center w3-padding-large w3-xxxlarge w3-wide w3-animate-opacity">
+                Welcome to My Page!</h1>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div class="w3-content w3-container padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <div class="w3-row">
+            <div class="w3-col m3 w3-center w3-padding-large">
+                <img src="pics/index/00.jpg" class="w3-round w3-image" alt="Photo of Me" width="80%">
+                <p><b><i></i></b></p>
+            </div>
+
+            <div class="w3-col m9 w3-padding-large font-2">
+                <p>Hello, I'm Ibrahim. I was born in Turkey. Though I am not from here, Antalya, I've
+                    been living here over 5 years. I've completed my BS in Electrical and Electronics
+                    Engineering last year. Now, I'm the senior student in Computer Engineering department.
+                </p>
+                <p>Activities I take pleasure in are reading, drawing, running, image/video editting, and
+                    playing computer games.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- My favorite PC games and Table -->
+    <div class="bgimg-2 display-container opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide">My Favorite PC Games</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#
+                        <th>Name
+                        <th>SP or MP
+                        <th>Category
+                        <th>System Requirements
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1
+                        <td>CS:GO
+                        <td>Multiplayer
+                        <td>Action
+                        <td>Low-mid
+                    <tr>
+                        <td>2
+                        <td>PUBG
+                        <td>Multiplayer
+                        <td>Action
+                        <td>High
+                    <tr>
+                        <td>3
+                        <td>Age of Empires II
+                        <td>Multiplayer
+                        <td>Strategy
+                        <td>Low
+                    <tr>
+                        <td>4
+                        <td>Watch_Dogs
+                        <td>Singleplayer
+                        <td>Action
+                        <td>High
+                    <tr>
+                        <td>5
+                        <td>The Witcher III
+                        <td>Singleplayer
+                        <td>Fantastic
+                        <td>High
+                    <tr>
+                        <td>6
+                        <td>Tomb Raider
+                        <td>Singleplayer
+                        <td>Advanture
+                        <td>Normal
+                    <tr>
+                        <td>7
+                        <td>Call of Duty: Modern Warfare
+                        <td>Singleplayer
+                        <td>Action
+                        <td>Normal
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="w3-content w3-container padding-64">
+        <h3 class="w3-center">WHERE I AM</h3>
+
+        <!-- Add google maps and links here -->
+        <!-- links on the left (ABU, Antalya, Songs), map on the right-->
+
+        <div class="w3-row">
+            <div class="w3-col m6 w3-padding-large">
+                <p>I'm student at Antalya Bilim University which literarly is located in the middle of nowhere. If you
+                    are
+                    seeking for solitary place for peace, then this might be a perfect place. (!)
+                </p>
+
+                <a class="btn btn-info" href="https://antalya.edu.tr/en" target="_blank">Antalya Bilim University</a>
+                <!-- <button type="button" class="btn btn-info">Antalya Bilim University</button> -->
+
+                <p><br />Antalya is one of the most beautiful provinces of Turkey on the Mediterranean coast in the
+                    South of Anatolia.
+                </p>
+
+                <!-- <button type="button" class="btn btn-warning">Learn more about Antalya</button> -->
+                <a class="btn btn-warning" href="antalya.html" target="_blank">Learn more about Antalya</a>
+
+                <p>&NonBreakingSpace;</p>
+                <h4 class="">Listen some musics</h4>
+
+                <p><i>“Without music, life would be a mistake.”</i>
+                </p>
+
+                <a class="btn btn-danger" href="music.html" target="_blank">Music</a>
+
+            </div>
+
+            <!-- google map -->
+            <div class="w3-col m6 padding-top">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Antalya%20Bilim%20University&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 400px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 400px;
+                        }
+                    </style>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- last img //  opacity-min -->
+    <div class="bgimg-3 display-container ">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide"></span>
+        </div>
+    </div>
+
+    <!-- This page is intented for cs 405 ...  -->
+    
+    <!-- <div class="w3-content w3-container padding-64 font-report" id="about">
+        <h3 class="w3-center">
+            <p>&nbsp</p><img src="pics/index/logo.jpg" alt="Antalya Bilim University" width="200px">
+        </h3>
+        <div class="w3-center w3-padding-large">
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>Department of Computer Engineering</p>
+            <p>&nbsp</p>
+            <p>CS405</p>
+            <p>Web Programming</p>
+            <p>&nbsp</p>
+            <p>Assignment #1</p>
+            <p>&nbsp</p>
+            <a href="mailto: ibrahim.berber@std.antalya.edu.tr">Ibrahim Berber</a>
+            <p>190201038</p>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <p>This content has been prepared for CS405 Homework purpose.</p>
+            <p>Check out the course page for more information.</p>
+            <p> <a href="http://antbilim.byethost8.com/cs405.php?i=1" target="_blank">Course page</a></p>
+            <p>&nbsp</p>
+            <p> <a href="references.html" target="_blank">References</a></p>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+    <div class="footer display-container">
+        <div class="w3-display-middle">
+            <span-1 class="w3-normal w3-text-white w3-wide">Ibrahim Berber</span-1>
+
+        </div>
+
+        <!-- <a><img class="social-media-icon-1" src="pics/general/instagram.png" alt="instagram" align="right"></a>
+
+        <a><img class="social-media-icon-2" src="pics/general/email.png" alt="email" align="right"></a> -->
+    </div>
+
+
+</body>
+
+</html>
